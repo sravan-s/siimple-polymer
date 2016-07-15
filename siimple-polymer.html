@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="stylesheet" type="text/css" href="../siimple/dist/siimple.css">
+<!--
+`siimple-polymer`
+A set of polymer elements built around siimple-css
+
+@demo demo/index.html 
+-->
+
+<dom-module id="siimple-polymer">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'siimple-polymer',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'siimple-polymer',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
